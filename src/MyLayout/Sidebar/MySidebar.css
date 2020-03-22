@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.SideBar {
+  position: relative;
+  background-color: #0f0c29;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  height: 125vh;
+  width: 175px;
+  top: 10px;
+  padding-top: 10px;
+}
+
+.SideBar .SideBarButtons {
+  display: grid;
+}
+.SideBar .SideBarButtons * {
+  justify-content: left;
+}
+
+.SideBar .SideBarButtons button {
+  color: #8388b8;
+}
+.SideBar .SideBarButtons button * {
+  color: rgb(131, 136, 184);
+}
+
+.SideBar .SideBarButtons button:hover {
+  background-color: rgba(131, 136, 184, 0.5);
+}

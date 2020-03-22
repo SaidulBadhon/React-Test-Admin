@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.TopHeader {
+  position: relative;
+
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  background-color: gray;
+}
+.Header {
+  position: absolute;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  top: -50px;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  margin-right: 15px;
+  z-index: 5;
+}
+
+nav ul li .MenuIconButton {
+  margin-top: 2px;
+  right: 45px;
+}
+
+nav {
+  text-align: left;
+}
+
+nav ul {
+  list-style-type: none;
+  float: left;
+  padding-right: 3%;
+}
+
+nav ul li {
+  float: left;
+  padding-left: 50px;
+  padding-top: 4px;
+  align-content: center;
+}
+
+nav ul li *:hover {
+  color: #dc143c;
+}
+
+/* USER BUTTONS */
+.HeaderUserInfo .NotificationsIconButton {
+  margin-top: -10px;
+  margin-right: 15px;
+}
+
+.HeaderUserInfo .SearchIconButton {
+  margin-top: -10px;
+}
+
+.HeaderUserInfo * :hover {
+  color: #dc143c;
+}
+
+/*USer INFO */
+.Header .HeaderUserInfo {
+  display: block;
+  position: relative;
+  height: 70%;
+  right: 15px;
+  text-align: right;
+}
+
+.Header .HeaderUserInfo div {
+  display: inline-block;
+  /*background-color: blue;*/
+  align-content: center;
+
+  top: 10px;
+}
+
+.Header .HeaderUserInfo .HeaderUserDitels {
+  position: relative;
+  text-align: right;
+  right: 10px;
+  top: 5px;
+}
+
+.Header .HeaderUserInfo .HeaderUserDitels h5 {
+  font-size: 1rem;
+  color: rgba(60, 60, 60, 1);
+  text-align: left;
+}
+.Header .HeaderUserInfo .HeaderUserDitels h6 {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.Header .HeaderUserInfo .Logo {
+  position: relative;
+  align-content: center;
+}
+.Header .HeaderUserInfo .Logo img {
+  width: 40px;
+}

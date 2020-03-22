@@ -1,0 +1,65 @@
+.Dashboard {
+  padding: 0px;
+  margin-left: -5px;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #efeff7;
+  width: calc(100% + 29px);
+  height: 100%;
+}
+.Cards {
+  display: inline-flex;
+}
+
+.Card {
+  margin-left: 20px;
+  margin-top: 20px;
+
+  background-color: white;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+
+  width: 225px;
+  height: 225px;
+
+  border-radius: 5px;
+}
+.Card .CardHeader {
+  display: inline-flex;
+  position: relative;
+
+  left: 20px;
+  top: 20px;
+}
+.Card .CardHeader .Icon {
+  background-color: rgba(0, 255, 0, 0.25);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.Card .CardHeader .Ammount {
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+.Card .CardHeader .Ammount h2 {
+  font-size: 25px;
+}
+
+.Card .Name {
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.Card .Name h2 {
+  font-weight: 100;
+  font-size: 1.1rem;
+
+  color: rgba(40, 40, 40, 0.75);
+}
+.Line-Grapth {
+  position: relative;
+  top: 40px;
+  padding-left: 0px;
+}
