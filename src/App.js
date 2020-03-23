@@ -1,10 +1,9 @@
 import React from "react";
 
-import { Admin, Resource, EditGuesser } from "react-admin";
+import { Admin, Resource } from "react-admin";
 
 import Dashboard from "./Dashboard/Dashboard";
-import NotFound from "./404NotFoud/NotFound";
-import Menu from "./Menu/Menu";
+import NotFound from "./404NotFoud/NotFound.js";
 import authProvider from "./authProvider";
 
 import MyLayout from "./MyLayout/MyLayout";
@@ -16,8 +15,8 @@ import { PostList, PostEdit, PostCreate } from "./posts";
 
 import PeopleAltRoundedIcon from "@material-ui/icons/PeopleAltRounded";
 import PostAddRoundedIcon from "@material-ui/icons/PostAddRounded";
-import simpleRestProvider from "ra-data-simple-rest";
 import MyLoginPage from "./MyLayout/Authentication/MyLoginPage";
+
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 
 //import dataProvider from "./dataProvider";

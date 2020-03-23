@@ -1,6 +1,6 @@
 // in src/users.js
 import React from "react";
-import { List, Datagrid, TextField, EmailField, UrlField } from "react-admin";
+import { List, Datagrid, TextField, EmailField } from "react-admin";
 
 import "./user.css";
 

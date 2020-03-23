@@ -30,6 +30,7 @@
 nav ul li .MenuIconButton {
   margin-top: 2px;
   right: 45px;
+  display: none;
 }
 
 nav {

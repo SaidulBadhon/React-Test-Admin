@@ -1,5 +1,14 @@
 .NotFoundBody {
-  background-color: red;
+  position: relative;
+  background: #efeff7;
   width: 100vw;
   height: 100vh;
+  text-align: center;
+  align-items: center;
+  padding-top: 05%;
+}
+
+.NotFoundBody img {
+  min-width: 500px;
+  max-width: 600px;
 }

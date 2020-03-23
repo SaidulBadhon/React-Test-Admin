@@ -1,6 +1,4 @@
 import React from "react";
-import { AppBar, UserMenu, MenuItemLink } from "react-admin";
-import SettingsIcon from "@material-ui/icons/Settings";
 
 import { Button, IconButton } from "@material-ui/core";
 import "./MySidebar.css";
@@ -10,26 +8,36 @@ import AccountBoxRoundedIcon from "@material-ui/icons/AccountBoxRounded";
 import PostAddRoundedIcon from "@material-ui/icons/PostAddRounded";
 import MessageRoundedIcon from "@material-ui/icons/MessageRounded";
 import LocalOfferRoundedIcon from "@material-ui/icons/LocalOfferRounded";
+import SettingsIcon from "@material-ui/icons/Settings";
+import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
 class MySidebar extends React.Component {
   constructor() {
     super();
     this.state = {
-      isLoading: false
+      pageNotFound: false
     };
   }
 
   render() {
     return (
       <div>
-        {this.state.isLoading ? (
+        <IconButton
+          className="Floating-Button MenuIconButton"
+          onClick={() => {
+            this.setState({ pageNotFound: !this.state.pageNotFound });
+          }}
+        >
+          <MenuRoundedIcon />
+        </IconButton>
+
+        {this.state.pageNotFound ? (
           <h1></h1>
         ) : (
           <div className="SideBar">
             <div className="SideBarButtons">
               <Button
                 className="ButtonClass"
-                style={{ height: 50 }}
                 onClick={() => {
                   window.location.href = "#/";
                 }}
@@ -40,9 +48,7 @@ class MySidebar extends React.Component {
                 />
                 &nbsp; Dashboard
               </Button>
-              <br></br>
               <Button
-                style={{ height: 50 }}
                 onClick={() => {
                   window.location.href = "#/users";
                 }}
@@ -53,9 +59,7 @@ class MySidebar extends React.Component {
                 />
                 &nbsp; User
               </Button>
-              <br></br>
               <Button
-                style={{ height: 50 }}
                 onClick={() => {
                   window.location.href = "#/posts";
                 }}
@@ -64,19 +68,29 @@ class MySidebar extends React.Component {
                 <PostAddRoundedIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
                 &nbsp; Posts
               </Button>
-              <br></br>
-              <Button style={{ height: 50 }}>
+              <Button>
                 &nbsp;
                 <MessageRoundedIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
                 &nbsp; Comments
               </Button>
-              <br></br>
-              <Button style={{ height: 50 }}>
+
+              <Button>
                 &nbsp;
                 <LocalOfferRoundedIcon
                   style={{ color: "rgba(40, 40, 40, .9)" }}
                 />
                 &nbsp; Tags
+              </Button>
+
+              <Button
+                style={{ top: "29.5%" }}
+                onClick={() => {
+                  window.location.href = "#/dashsakjsadhgjkl";
+                }}
+              >
+                &nbsp;
+                <SettingsIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
+                &nbsp; Settings
               </Button>
             </div>
           </div>

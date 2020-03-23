@@ -1,7 +1,8 @@
+import { Resource } from "react-admin";
+import { PostList } from "../posts";
+
 // in src/Dashboard.js
 import React, { Component } from "react";
-import Card from "@material-ui/core/Card";
-import { CardContent, CardHeader, Typography } from "@material-ui/core/";
 
 import { Line } from "react-chartjs-2";
 
@@ -9,6 +10,7 @@ import AttachMoneyRoundedIcon from "@material-ui/icons/AttachMoneyRounded";
 import PeopleOutlineIcon from "@material-ui/icons/PeopleOutline";
 import ChatBubbleOutlineRoundedIcon from "@material-ui/icons/ChatBubbleOutlineRounded";
 import "./Dashboard.css";
+//MuiToolbar-root MuiToolbar-regular RaListToolbar-toolbar-81 MuiToolbar-gutters
 
 export default class Dashboard extends Component {
   constructor(props) {
@@ -302,6 +304,14 @@ export default class Dashboard extends Component {
                 data={this.state.WatchTimeData}
               />
             </div>
+          </div>
+        </div>
+
+        <div className="Recent">
+          <div className="Recent-Header">Recent Orders :</div>
+          <div className="Recent-Data-Header"></div>
+          <div className="Recent-Data-Body">
+            <Resource name="posts" list={PostList} />
           </div>
         </div>
       </div>

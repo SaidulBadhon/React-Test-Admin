@@ -6,6 +6,7 @@
   width: calc(100% + 29px);
   height: 100%;
 }
+/* CARDS */
 .Cards {
   display: inline-flex;
 }
@@ -22,6 +23,7 @@
 
   border-radius: 5px;
 }
+
 .Card .CardHeader {
   display: inline-flex;
   position: relative;
@@ -29,6 +31,7 @@
   left: 20px;
   top: 20px;
 }
+
 .Card .CardHeader .Icon {
   background-color: rgba(0, 255, 0, 0.25);
   border-radius: 50px;
@@ -58,8 +61,53 @@
 
   color: rgba(40, 40, 40, 0.75);
 }
+
 .Line-Grapth {
   position: relative;
   top: 40px;
   padding-left: 0px;
 }
+
+/** Recent Orders **/
+.Recent {
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  width: calc((225px * 4) + 60px);
+  height: 225px;
+
+  border-radius: 5px;
+}
+
+.Recent .Recent-Header {
+  border-bottom: 1px solid #cdd;
+  padding: 5px 10px;
+  color: #555;
+}
+
+.Recent-Data-Body
+  .list-page.RaList-root-75
+  .MuiToolbar-root.MuiToolbar-regular.RaListToolbar-toolbar-81.MuiToolbar-gutters {
+  display: none;
+}
+
+/*
+.Cards {
+  display: inline-flex;
+}
+
+.Card {
+  margin-left: 20px;
+  margin-top: 20px;
+
+  background-color: white;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+
+  width: 225px;
+  height: 225px;
+
+  border-radius: 5px;
+}
+*/

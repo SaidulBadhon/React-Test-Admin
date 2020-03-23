@@ -1,10 +1,8 @@
 // in src/MyLoginPage.js
 import React, { useState } from "react";
-import { useLogin, useNotify, Notification } from "react-admin";
-import { ThemeProvider } from "@material-ui/styles";
+import { useLogin, useNotify } from "react-admin";
 
 import "./MyLoginPage.css";
-import LoginPageBackground from "./LoginPageBackground.svg";
 
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -65,7 +63,7 @@ const MyLoginPage = ({ theme }) => {
                 autoComplete="current-password"
                 onChange={e => setPassword(e.target.value)}
               />
-              <a href="#">Forgot your password ?</a>
+              <a href="#/dsagd">Forgot your password ?</a>
               <div className="IamaBtton">
                 <Button
                   variant="contained"

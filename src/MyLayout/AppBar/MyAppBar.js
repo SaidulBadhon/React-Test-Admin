@@ -1,13 +1,10 @@
 import React, { Fragment } from "react";
-import { AppBar, UserMenu, MenuItemLink } from "react-admin";
-import SettingsIcon from "@material-ui/icons/Settings";
-import { Button, IconButton } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
 
 import logo from "./logo.png";
 
 import "./MyAppBar.css";
 
-import NotificationsNoneRoundedIcon from "@material-ui/icons/NotificationsNoneRounded";
 import NotificationsRoundedIcon from "@material-ui/icons/NotificationsRounded";
 
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
@@ -17,7 +14,7 @@ import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 function MyAppBar(propos) {
   function MenuButton(e) {
     e.preventDefault();
-    propos.sidebarIsOpen(true);
+
     console.log("High form Menu");
   }
 

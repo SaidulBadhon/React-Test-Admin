@@ -1,8 +1,6 @@
 import React from "react";
-import { AppBar, UserMenu, MenuItemLink } from "react-admin";
-import SettingsIcon from "@material-ui/icons/Settings";
 
-import { Button, IconButton } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import "./MyMenu.css";
 
 function MyMenu() {

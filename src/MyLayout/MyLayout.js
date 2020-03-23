@@ -20,7 +20,7 @@ const MyLayout = props => (
     appBar={MyAppBar}
     sidebar={MySidebar}
     loginPage={MyLoginPage}
-    logoutButton={MyLogoutButton}
+    //    logoutButton={MyLogoutButton}
 
     /*    notification={MyNotification}*/
   />

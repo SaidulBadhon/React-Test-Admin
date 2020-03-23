@@ -17,16 +17,6 @@ import {
   Filter,
   SimpleList
 } from "react-admin";
-//
-// export const PostList = (props) => (
-//     <List {...props}>
-//         <SimpleList
-//             primaryText={record => record.title}
-//             secondaryText={record => `${record.views} views`}
-//             tertiaryText={record => new Date(record.published_at).toLocaleDateString()}
-//         />
-//     </List>
-// );
 
 export const PostList = props => {
   const isSmall = useMediaQuery(theme => theme.breakpoints.down("sm"));
@@ -48,6 +38,7 @@ export const PostList = props => {
             <TextField source="name" />
           </ReferenceField>
           <TextField source="title" />
+
           <EditButton />
         </Datagrid>
       )}

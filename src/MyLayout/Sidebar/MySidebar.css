@@ -16,7 +16,7 @@
 }
 
 .SideBar .SideBarButtons {
-  display: grid;
+  height: 100%;
 }
 .SideBar .SideBarButtons * {
   justify-content: left;
@@ -24,6 +24,9 @@
 
 .SideBar .SideBarButtons button {
   color: #8388b8;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .SideBar .SideBarButtons button * {
   color: rgb(131, 136, 184);
@@ -31,4 +34,17 @@
 
 .SideBar .SideBarButtons button:hover {
   background-color: rgba(131, 136, 184, 0.5);
+}
+
+.Floating-Button.MenuIconButton {
+  position: absolute;
+
+  left: 5px;
+  top: 4px;
+
+  z-index: 5;
+}
+
+.Floating-Button.MenuIconButton * :hover {
+  color: #dc143c;
 }
