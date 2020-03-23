@@ -37,6 +37,14 @@ nav {
   text-align: left;
 }
 
+nav h1 {
+  margin-top: 13px;
+  margin-left: 55px;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: rgba(0, 60, 60, 1);
+}
+
 nav ul {
   list-style-type: none;
   float: left;

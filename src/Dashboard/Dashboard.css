@@ -1,10 +1,13 @@
 .Dashboard {
   padding: 0px;
+  margin-top: 0px;
   margin-left: -5px;
   font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
   background: #efeff7;
   width: calc(100% + 29px);
-  height: 100%;
+  height: calc(100vh - 50px);
+  margin-top: 0px;
+  overflow: hidden;
 }
 /* CARDS */
 .Cards {
@@ -91,6 +94,13 @@
   .list-page.RaList-root-75
   .MuiToolbar-root.MuiToolbar-regular.RaListToolbar-toolbar-81.MuiToolbar-gutters {
   display: none;
+}
+
+.Recent-Data-Body
+  .list-page.RaList-root-75
+  .MuiPaper-root.MuiCard-root.RaList-content-77.MuiPaper-elevation1.MuiPaper-rounded {
+  height: 246px !important;
+  overflow: hidden;
 }
 
 /*

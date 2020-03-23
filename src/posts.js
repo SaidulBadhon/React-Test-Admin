@@ -15,7 +15,8 @@ import {
   SelectInput,
   Create,
   Filter,
-  SimpleList
+  SimpleList,
+  pagination
 } from "react-admin";
 
 export const PostList = props => {

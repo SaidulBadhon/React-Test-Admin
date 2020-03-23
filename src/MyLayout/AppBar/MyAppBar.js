@@ -30,6 +30,7 @@ function MyAppBar(propos) {
                 </IconButton>
               </li>
             </ul>
+            <h1>TechSecBD</h1>
           </nav>
 
           <div className="HeaderUserInfo">

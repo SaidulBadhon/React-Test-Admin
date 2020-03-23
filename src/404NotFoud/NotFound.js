@@ -21,11 +21,6 @@ export default () => (
     {MySidebar.Thisasd == true}
     <div className="NotFoundBody">
       <img src={svg} alt="404 Background" />
-      <Card>
-        <CardContent>
-          <h1>404: Page not found</h1>
-        </CardContent>
-      </Card>
     </div>
   </Fragment>
 );
