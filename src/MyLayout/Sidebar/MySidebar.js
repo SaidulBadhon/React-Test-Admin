@@ -22,79 +22,72 @@ class MySidebar extends React.Component {
   render() {
     return (
       <div>
-        <IconButton
-          className="Floating-Button MenuIconButton"
-          onClick={() => {
-            this.setState({ pageNotFound: !this.state.pageNotFound });
-          }}
-        >
-          <MenuRoundedIcon />
-        </IconButton>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" for="menu-btn">
+          <span className="nav-icon"></span>
+        </label>
+        {/*this.state.pageNotFound ? (
+          <div className="SideBar"></div>
+        ) : (*/}
+        <div className="SideBar">
+          <div className="SideBarButtons">
+            <Button
+              className="ButtonClass"
+              onClick={() => {
+                window.location.href = "#/";
+              }}
+            >
+              &nbsp;
+              <DashboardRoundedIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
+              &nbsp; Dashboard
+            </Button>
+            <Button
+              onClick={() => {
+                window.location.href = "#/users";
+              }}
+            >
+              &nbsp;
+              <AccountBoxRoundedIcon
+                style={{ color: "rgba(40, 40, 40, .9)" }}
+              />
+              &nbsp; User
+            </Button>
+            <Button
+              onClick={() => {
+                window.location.href = "#/posts";
+              }}
+            >
+              &nbsp;
+              <PostAddRoundedIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
+              &nbsp; Posts
+            </Button>
+            <Button>
+              &nbsp;
+              <MessageRoundedIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
+              &nbsp; Comments
+            </Button>
 
-        {this.state.pageNotFound ? (
-          <h1></h1>
-        ) : (
-          <div className="SideBar">
-            <div className="SideBarButtons">
-              <Button
-                className="ButtonClass"
-                onClick={() => {
-                  window.location.href = "#/";
-                }}
-              >
-                &nbsp;
-                <DashboardRoundedIcon
-                  style={{ color: "rgba(40, 40, 40, .9)" }}
-                />
-                &nbsp; Dashboard
-              </Button>
-              <Button
-                onClick={() => {
-                  window.location.href = "#/users";
-                }}
-              >
-                &nbsp;
-                <AccountBoxRoundedIcon
-                  style={{ color: "rgba(40, 40, 40, .9)" }}
-                />
-                &nbsp; User
-              </Button>
-              <Button
-                onClick={() => {
-                  window.location.href = "#/posts";
-                }}
-              >
-                &nbsp;
-                <PostAddRoundedIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
-                &nbsp; Posts
-              </Button>
-              <Button>
-                &nbsp;
-                <MessageRoundedIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
-                &nbsp; Comments
-              </Button>
+            <Button>
+              &nbsp;
+              <LocalOfferRoundedIcon
+                style={{ color: "rgba(40, 40, 40, .9)" }}
+              />
+              &nbsp; Tags
+            </Button>
 
-              <Button>
-                &nbsp;
-                <LocalOfferRoundedIcon
-                  style={{ color: "rgba(40, 40, 40, .9)" }}
-                />
-                &nbsp; Tags
-              </Button>
-
-              <Button
-                style={{ top: "29.5%" }}
-                onClick={() => {
-                  window.location.href = "#/dashsakjsadhgjkl";
-                }}
-              >
-                &nbsp;
-                <SettingsIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
-                &nbsp; Settings
-              </Button>
-            </div>
+            <Button
+              style={{ top: "29.5%" }}
+              onClick={() => {
+                window.location.href = "#/dashsakjsadhgjkl";
+              }}
+            >
+              &nbsp;
+              <SettingsIcon style={{ color: "rgba(40, 40, 40, .9)" }} />
+              &nbsp; Settings
+            </Button>
           </div>
-        )}
+        </div>
+        {/*)*/}
       </div>
     );
   }

@@ -13,6 +13,7 @@
   width: 175px;
   top: 10px;
   padding-top: 10px;
+  transition: width 0.2s ease-out;
   overflow: hidden;
 }
 
@@ -28,6 +29,7 @@
   height: 50px;
   width: 100%;
   margin-bottom: 10px;
+  position: unset;
 }
 .SideBar .SideBarButtons button * {
   color: rgb(131, 136, 184);
@@ -37,6 +39,71 @@
   background-color: rgba(131, 136, 184, 0.5);
 }
 
+.menu-icon {
+  /*  border: 1px solid red;*/
+  padding: 22px 15px;
+  margin: 0px;
+  position: relative;
+
+  position: absolute;
+
+  left: 5px;
+  top: 5px;
+
+  z-index: 5;
+  cursor: pointer;
+}
+
+.menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 3px;
+  width: 20px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.menu-icon .nav-icon:before {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 75%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 6px;
+}
+
+.menu-icon .nav-icon:after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -6px;
+}
+.menu-btn {
+  display: none;
+}
+.menu-btn:checked ~ .SideBar {
+  width: 0px;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon {
+  background: #333;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+  width: 100%;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+  width: 100%;
+}
+
+/*
 .Floating-Button.MenuIconButton {
   position: absolute;
 
@@ -49,3 +116,27 @@
 .Floating-Button.MenuIconButton * :hover {
   color: #dc143c;
 }
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .SideBar {
+  width: 0px;
+}
+*/
+
+/*
+.SideBar {
+  position: relative;
+  background-color: #0f0c29;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  height: calc(100vh - 65px);
+  width: 175px;
+  top: 10px;
+  padding-top: 10px;
+  overflow: hidden;
+  transition: width 0.2s ease-out;
+}
+*/
